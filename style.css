@@ -82,10 +82,12 @@ body {
 
 .topdiv {
   margin-bottom: 1vw;
+  cursor: pointer;
 }
 
 .botdiv {
   margin-top: 1vw;
+  cursor: pointer;
 }
 
 hr {
