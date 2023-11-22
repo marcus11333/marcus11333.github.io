@@ -79,7 +79,7 @@ const links = [
 
 for (i in titles){
   img = new Image();
-  img.src = "_IMAGES/" + imageurls[i] + ".png"
+  img.src = "IMAGES/" + imageurls[i] + ".png"
   
   link = document.createElement("a");
   link.href = links[i]
