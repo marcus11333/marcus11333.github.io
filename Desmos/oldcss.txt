@@ -1,0 +1,46 @@
+html, body {
+  height: 100%;
+  background-color: #f3f3f3;
+}
+.grid { 
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-gap: 20px;
+  align-items: stretch;
+  margin: 40px;
+  padding-bottom: 20px;
+  }
+.grid img {
+  max-width: 100%;
+}
+.grid p {
+  text-align: center;
+  font-family: "Varela Round", sans-serif;
+  font-size: 20px;
+}
+.item {
+  background-color: #f3f3f3;
+  border-radius: 25px;
+  overflow: hidden;
+  overflow-wrap: break-word;
+  border: solid 0.15vh #b0b0b0;
+}
+.topnav {
+  width: auto;
+  margin: auto 40px auto 40px;
+  background-color: #f3f3f3;
+  padding: 20px;
+  margin-top: 20px;
+  margin-bottom: -20px;
+  border-radius: 20px;
+  border: solid 0.15vh #b0b0b0;
+}
+
+.topnav .text{
+  font-family: "Varela Round", sans-serif;
+  font-size: 20px;
+  font-style:normal;
+}
+.topnav i {
+  margin-right: 10px;
+}

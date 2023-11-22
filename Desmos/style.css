@@ -1,0 +1,69 @@
+html, body {
+  height: 100%;
+  padding: 0;
+  margin: 0;
+}
+html {
+  background-color: #388c46;
+}
+
+
+
+.grid { 
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-gap: 20px;
+  align-items: stretch;
+  margin: 40px;
+  padding-bottom: 20px;
+}
+
+.grid img {
+  max-width: 100%;
+  border: 2px solid black;
+  border-radius: 15px;
+}
+.grid p {
+  text-align: center;
+  font-family: "Varela Round", sans-serif;
+  font-size: 20px;
+}
+.item {
+  background-color: white;
+  border-radius: 25px;
+  padding: 20px;
+  overflow-wrap: break-word;
+}
+.topnav {
+  z-index: 10;
+  width: auto;
+  margin: auto 40px auto 40px;
+  background-color: white;
+  padding: 20px;
+  margin-top: 20px;
+  margin-bottom: -20px;
+  border-radius: 20px;
+}
+
+.topnav .text{
+  font-family: "Varela Round", sans-serif;
+  font-size: 20px;
+  font-style:normal;
+}
+.topnav i {
+  margin-right: 10px;
+}
+
+.bgimg {
+  background-color: #388c46;
+  background-image: url("wm_black.png");
+  position: fixed;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  width: 100vw;
+  z-index: -1;
+  top: 0;
+  opacity: 0.1;
+}

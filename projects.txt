@@ -1,0 +1,7 @@
+eulerian fluid simulation
+lagrangian fluid simulation
+perlin noise flow field
+circle packing
+double pendulum
+mandelbulb
+soft body physics
