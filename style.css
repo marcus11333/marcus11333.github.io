@@ -196,4 +196,12 @@ hr {
 
 
 
-
+.apl {
+  position: absolute;
+  width: 49vw;
+  bottom: 2vw;
+  font-family: 'Fira Code', monospace;
+  font-weight: 400;
+  color: var(--blue);
+  font-size: 0.7vw;
+}
