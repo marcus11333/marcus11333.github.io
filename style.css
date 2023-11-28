@@ -195,7 +195,7 @@ hr {
 }
 
 
-
+/*
 .apl {
   position: absolute;
   width: 49vw;
@@ -205,3 +205,6 @@ hr {
   color: var(--blue);
   font-size: 0.7vw;
 }
+
+add to leftdiv: <div class = "apl">'# '[1+2<∣{c+⍵×⍵}⍣9c←¯2J¯2+.1×0J1⊥¨⍳41 41-1J1]</div>
+*/
