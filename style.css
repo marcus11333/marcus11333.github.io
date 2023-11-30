@@ -110,9 +110,8 @@ body {
   font-size: 8vmin;
   margin-top: 0;
   margin-bottom: 0;
-
   font-family: studiofeixen-variable;
-  font-variation-settings: "wdth" 125, "wght" 800;
+  /*font-variation-settings: "wdth" 125, "wght" 800;*/
 }
 
 
