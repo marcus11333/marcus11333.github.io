@@ -103,15 +103,27 @@ body {
   -webkit-text-stroke: 0.1vh var(--blue);
 }
 
-.leftdiv h1 {
+.leftdiv .name {
+  margin: 0;
+  padding: 0;
+  cursor: default;
+}
+.leftdiv .letter {
+  display: inline-block;
   text-transform: uppercase;
   color: var(--blue);
   font-weight: 400;
   font-size: 8vmin;
-  margin-top: 0;
-  margin-bottom: 0;
   font-family: studiofeixen-variable;
-  /*font-variation-settings: "wdth" 125, "wght" 800;*/
+  font-variation-settings: "wght" 800;
+  transition: all .3s ease-out;
+  
+  &:hover {
+    animation-duration: 1s;
+    animation-name: rubberBand;
+    
+  }
+  
 }
 
 
@@ -194,6 +206,8 @@ hr {
 }
 
 
+
+
 /*
 .apl {
   position: absolute;
@@ -207,3 +221,40 @@ hr {
 
 add to leftdiv: <div class = "apl">'# '[1+2<∣{c+⍵×⍵}⍣9c←¯2J¯2+.1×0J1⊥¨⍳41 41-1J1]</div>
 */
+
+
+
+@keyframes rubberBand {
+  from {
+    transform: scale3d(1, 1, 1);
+  }
+
+  30% {
+    transform: scale3d(1.25, 0.75, 1);
+  }
+
+  40% {
+    transform: scale3d(0.75, 1.25, 1);
+  }
+
+  50% {
+    transform: scale3d(1.15, 0.85, 1);
+  }
+
+  65% {
+    transform: scale3d(.95, 1.05, 1);
+  }
+
+  75% {
+    transform: scale3d(1.05, .95, 1);
+  }
+
+  to {
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+.rubberBand {
+  -webkit-animation-name: rubberBand;
+  animation-name: rubberBand;
+}

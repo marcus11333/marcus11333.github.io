@@ -5,3 +5,9 @@ circle packing
 double pendulum
 mandelbulb
 soft body physics
+
+
+
+=========================================
+website inspiration
+https://dvlpr.pro/#skills
