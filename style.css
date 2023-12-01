@@ -69,6 +69,12 @@ body {
   padding: 1vh 0 1vh 0;
   color: var(--blue);
 }
+.toplink{
+  margin: 0;
+  padding: 0;
+  cursor: default;
+  width: 0;
+}
 
 .bigdiv {
   flex: 1;
@@ -162,15 +168,15 @@ body {
   cursor: pointer;
 }
 
-hr {
+.topline {
   border: 0;
   position: absolute;
-  top: 6vh;
+  top: 7vh;
   left: 2vw;
   height: 0px;
   width: 46vw;
   border-top: solid 0.2vh var(--blue);
-
+  margin: 0;
 }
 
 .sd i {
@@ -208,19 +214,11 @@ hr {
 
 
 
-/*
-.apl {
-  position: absolute;
-  width: 49vw;
-  bottom: 2vw;
-  font-family: 'Fira Code', monospace;
-  font-weight: 400;
-  color: var(--blue);
-  font-size: 0.7vw;
+.toplink:hover ~ .topline{
+  transition: 0.5s;
+  width: 38vh;
 }
 
-add to leftdiv: <div class = "apl">'# '[1+2<∣{c+⍵×⍵}⍣9c←¯2J¯2+.1×0J1⊥¨⍳41 41-1J1]</div>
-*/
 
 
 
@@ -257,4 +255,12 @@ add to leftdiv: <div class = "apl">'# '[1+2<∣{c+⍵×⍵}⍣9c←¯2J¯2+.1×0
 .rubberBand {
   -webkit-animation-name: rubberBand;
   animation-name: rubberBand;
+}
+
+.dividingline {
+  border: 0;
+  height: 0px;
+  width: 46vw;
+  border-top: solid 0.2vh var(--blue);
+  margin: 2vh 0 2vh 0;
 }
