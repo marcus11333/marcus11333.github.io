@@ -50,7 +50,9 @@ graphs =[
   'o72ifubmta', // (5 4 2) hyperbolic tesselation on the poincare disk
   'kmlfgbs4dg', // Wythoff construction on a (5 4 2) hyperbolic tesselation on the poincare disk
   'wyr9tizeca', // Fractal flame
-  'gjf2nuztfz'  // Circle packing
+  'gjf2nuztfz', // Circle packing
+  'md0dtsyhkx', // Softbody of any shape
+  'ydzapwdvaf' // Softbody car
   ]
 
 async function grabTitle(hash) {
