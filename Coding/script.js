@@ -13,7 +13,8 @@ const titles = [
   "Metaballs",
   "Image to ASCII art",
   "Ducks Fractal Piling",
-  "Reaction-Diffuse Algorithm"
+  "Reaction-Diffuse Algorithm",
+  "Buddhabrot Fractal"
 ]
 
 
@@ -38,7 +39,8 @@ const languages = [
   HTML+" "+CSS+" "+JS,
   PYTHON,
   HTML+" "+CSS+" "+JS,
-  JS
+  JS,
+  HTML+" "+CSS+" "+JS
 ]
 
 for (i in titles){
@@ -59,7 +61,8 @@ const imageurls = [
   "ball",
   "ascii",
   "piling",
-  "reaction"
+  "reaction",
+  "buddha"
 ]
 const links = [
   "https://particlelife.marcus11333.repl.co/",
@@ -74,7 +77,8 @@ const links = [
   "https://metaballs.marcus11333.repl.co",
   "https://replit.com/@marcus11333/ASCII?v=1",
   "https://ducks-with-sliders.marcus11333.repl.co",
-  "https://reaction-diffusion-p5.marcus11333.repl.co/"
+  "https://reaction-diffusion-p5.marcus11333.repl.co/",
+  "https://buddhabrot.marcus11333.repl.co/"
 ]
 
 for (i in titles){
