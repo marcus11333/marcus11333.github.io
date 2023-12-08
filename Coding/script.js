@@ -78,7 +78,7 @@ const links = [
   "https://replit.com/@marcus11333/ASCII?v=1",
   "https://ducks-with-sliders.marcus11333.repl.co",
   "https://reaction-diffusion-p5.marcus11333.repl.co/",
-  "https://buddhabrot.marcus11333.repl.co/"
+  "https://buddhafractal.marcus11333.repl.co"
 ]
 
 for (i in titles){
