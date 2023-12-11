@@ -68,6 +68,8 @@ body {
   margin: 0 2vw 0 2vw;
   padding: 1vh 0 1vh 0;
   color: var(--blue);
+  display: flex;
+  justify-content: space-between;
 }
 .toplink{
   margin: 0;
@@ -263,4 +265,8 @@ body {
   width: 46vw;
   border-top: solid 0.2vh var(--blue);
   margin: 2vh 0 2vh 0;
+}
+
+.fa-linkedin {
+  color: var(--blue);
 }
