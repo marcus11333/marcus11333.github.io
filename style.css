@@ -270,3 +270,12 @@ body {
 .fa-linkedin {
   color: var(--blue);
 }
+
+h2 img {
+  color: var(--blue);
+  height: 3vmin;
+}
+
+#skillp {
+  cursor: default;
+}
