@@ -270,19 +270,32 @@ body {
   color: var(--blue);
 }
 
-h2 img {
-  color: var(--blue);
-  height: 3vmin;
+
+.skillflex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
 }
 
-#skillp span {
-  cursor: default;
+.flexitem {
+  width: 15vmin;
+  text-align: center;
+  margin-top: 2vh;
 }
-/*
-img {
-  opacity: 0;
+.flexitem p {
+  font-size: 2.5vmin;
+  padding-top: 0;
 }
-*/
-#skillp span:hover {
+.flexitem img {
+  height: 7vmin;
+}
+
+.skills {
+  text-align: center;
+  margin: 0;
   color: var(--blue);
+  font-weight: 400;
+  font-size: 8vmin;
+  font-family: studiofeixen-variable;
+  font-variation-settings: "wght" 800;
 }
