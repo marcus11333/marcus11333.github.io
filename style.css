@@ -129,7 +129,6 @@ body {
   &:hover {
     animation-duration: 1s;
     animation-name: rubberBand;
-    
   }
   
 }
@@ -276,6 +275,14 @@ h2 img {
   height: 3vmin;
 }
 
-#skillp {
+#skillp span {
   cursor: default;
+}
+/*
+img {
+  opacity: 0;
+}
+*/
+#skillp span:hover {
+  color: var(--blue);
 }

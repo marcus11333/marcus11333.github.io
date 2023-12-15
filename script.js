@@ -26,8 +26,12 @@ skillp = document.getElementById("skillp");
 
 function swap(str){
   star.src = "logos/" + str + ".svg"
+  //star.style = "height: 3.5vmin"
+  //star.style = "opacity: 1"
 }
 function revert(){
+  //star.style = "height: 3vmin"
+  //star.style = "opacity: 0"
   star.src = "logos/star.svg"
 }
 
