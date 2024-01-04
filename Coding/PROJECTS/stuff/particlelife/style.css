@@ -1,0 +1,65 @@
+:root {
+  color-scheme: dark;
+  --v: min(87.5vh, 50vw);
+}
+
+body {
+  background-color: black;
+}
+
+canvas {
+  background-color: black;
+  position: absolute;
+  transform: translate(-50%,-50%);
+  border: solid calc( var(--v) *.005) white;
+}
+
+.banner {
+  height: 12.5vw;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  border-bottom: solid calc( var(--v) *.005) white;
+}
+.buttons {
+  position: absolute;
+  left: 50%;
+  top: 75%;
+  width: 50%;
+}
+.buttons img {
+  width: calc( var(--v) *.15);
+  height: calc( var(--v) *.15);
+  margin-left: calc(var(--v) *.4 * .2 - calc( var(--v) *.01));
+  border: solid calc( var(--v) *.005) white;
+  border-radius: 12%;
+}
+#life {
+  height: calc( var(--v) *.7);
+  left: 25%;
+  top: calc(56.25vh + 6.25vh);
+  z-index: 1;
+}
+#attr {
+  height: calc( var(--v) *.4);
+  left: 75%;
+  top: 50vh;
+}
+
+.explanation {
+  position: absolute;
+  left: 42%;
+  top: 32.3%;
+  width: 19%;
+  height: 34.7%;
+  border: solid calc( var(--v) *.005) white;
+  padding: 1vmin 3vmin;
+}
+
+p {
+  font-family: "Noto Sans", serif;
+}
+
+.buttons img:hover {
+  cursor: pointer;
+}

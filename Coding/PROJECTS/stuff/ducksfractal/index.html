@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Ducks Fractal</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Sans">
+</head>
+
+<body>
+  <canvas id="canv"></canvas>
+  <div class="textbox">
+    <h1>Ducks fractal zoom</h1>
+    <p>This animation is a zoom in on something called a Ducks Fractal.</p>
+    <p>A Ducks fractal is defined as a julia set of the function 𝒇(𝒛) = 𝒍𝒏(𝑰𝒂𝒃𝒔(𝒛)+𝒄) where  𝑰𝒂𝒃𝒔(𝒛) = (𝐈𝐦(𝒛) > 𝟎)? 𝒛 : 𝒛* for a point 𝒛=𝒙+𝒊𝒚 and some complex constant 𝒄</p>
+    <p>A ducks fractal will only exhibit fractal complexity if the point 𝒄 is between two specific arcs with vertices at 𝟏 and -𝟏-𝛑𝒊. Since in my program 𝒄 is randomly chosen you may need to reload the website a few times to get a result with fractal complexity</p>
+    <p>unlike the very well known mandelbrot set, the ducks fractal is just an interesting fractal somebody found and wrote about online</p>
+  </div>
+  <button onclick="location.reload()"><p>If you dont get a cool result, click here to reload the site.</p></button>
+  <script src="script.js" async></script>
+</body>
+
+</html>

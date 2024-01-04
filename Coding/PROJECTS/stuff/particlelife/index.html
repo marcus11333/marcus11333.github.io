@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Particle Life</title>
+  <link rel="icon" type="image/png" href="images/icon.jpg"/>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Sans">
+</head>
+
+<body>
+  
+  <img id="banner" class="banner" src="images/banner.png"/>
+  <canvas id="life" onclick="fullScreen()"></canvas>
+  <canvas id="attr"></canvas>
+      
+  <div class="buttons">
+    <img onclick="btnRando()" src="images/iconRandom.png"/>
+    <img onclick="btnSnake()" src="images/iconSnake.png"/>
+    <img onclick="btnLinks()" src="images/iconLinks.png"/>
+    <img class="shuffle" onclick="shufflePts()" src="images/shuffle.png"/>
+  </div>
+  
+  <div class="explanation">
+    <p class="txt">
+      Particle Life is a simple program to simulate primitive artificial life using simple rules of attraction or repulsion among atom-like particles, producing complex self-organzing life-like patterns.
+      Each Particle color has a random strength attraction or repulsion of a to another color determined by a random number [-1,1], The attractions are shown in the grid.
+    </p>
+  </div>
+  
+<!-- async tag sped up time to first byte by 30.12%  -->
+<script src="script.js" async >
+  
+</script>
+
+
+
+
+
+
+
+
+  
+</body>
+
+</html>

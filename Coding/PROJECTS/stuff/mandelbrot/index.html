@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Mandelbrot Fractal</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Sans">
+</head>
+
+<body>
+  <canvas id="canv"></canvas>
+  <div class="textbox">
+    <h1>Mandelbrot fractal zoom</h1>
+    <p>This animation is a zoom in on something called the Mandelbrot set.</p>
+    <p>The Mandelbrot set is the set of complex numbers 𝒄 for which the function 𝒇(𝒛)=𝒛²+𝒄 does not diverge to infinity when iterated from 𝒛 = 𝟎</p>
+    <p>Images of the Mandelbrot set exhibit an elaborate and infinitely complicated boundary that reveals progressively ever-finer recursive detail at increasing magnifications</p>
+    <p>In my animation I am taking points 𝒙+𝒊𝒚 and coloring them black if they are in the set and otherwise coloring them with a logarithmic gradient based on how many iterations a point goes through before it escapes and its distance from the center when it escapes</p>
+  </div>
+  
+  <script src="script.js" async></script>
+</body>
+
+</html>
