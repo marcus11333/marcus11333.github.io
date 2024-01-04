@@ -66,19 +66,19 @@ const imageurls = [
 ]
 const links = [
   "PROJECTS/stuff/particlelife/index.html",
-  "https://mandelbrotfractal.marcus11333.repl.co/",
-  "https://fractalflame.marcus11333.repl.co/",
-  "https://ducksfractal.marcus11333.repl.co/",
-  "https://desmos-multiplayer-revamped.marcus11333.repl.co/",
-  "https://replit.com/@marcus11333/albumreview?v=1",
-  "https://replit.com/@marcus11333/Wordle?v=1",
-  "https://replit.com/@marcus11333/pythonparticle?v=1",
-  "https://slime-mold-simulation.marcus11333.repl.co",
-  "https://metaballs.marcus11333.repl.co",
-  "https://replit.com/@marcus11333/ASCII?v=1",
-  "https://ducks-with-sliders.marcus11333.repl.co",
-  "https://reaction-diffusion-p5.marcus11333.repl.co/",
-  "https://buddhafractal.marcus11333.repl.co"
+  "PROJECTS/stuff/mandelbrot/index.html",
+  "PROJECTS/stuff/fractalflame/index.html",
+  "PROJECTS/stuff/ducksfractal/index.html",
+  "PROJECTS/stuff/desmos_multiplayer/index.php",
+  "https://replit.com/@marcus11333/albumreview?v=1", //
+  "https://replit.com/@marcus11333/Wordle?v=1", //
+  "https://replit.com/@marcus11333/pythonparticle?v=1", //
+  "PROJECTS/stuff/slime/index.html",
+  "PROJECTS/stuff/metaballs/index.html",
+  "https://replit.com/@marcus11333/ASCII?v=1", //
+  "PROJECTS/stuff/ducks2/index.html",
+  "PROJECTS/stuff/reaction_diffusion/index.html",
+  "PROJECTS/stuff/buddha/index.html"
 ]
 
 for (i in titles){
