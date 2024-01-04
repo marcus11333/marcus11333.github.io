@@ -65,7 +65,7 @@ const imageurls = [
   "buddha"
 ]
 const links = [
-  "PROJECTS/stuff/particlelife/index.html"
+  "PROJECTS/stuff/particlelife/index.html",
   "https://mandelbrotfractal.marcus11333.repl.co/",
   "https://fractalflame.marcus11333.repl.co/",
   "https://ducksfractal.marcus11333.repl.co/",
