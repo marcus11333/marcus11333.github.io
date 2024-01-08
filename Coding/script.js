@@ -14,7 +14,8 @@ const titles = [
   "Image to ASCII art",
   "Ducks Fractal Piling",
   "Reaction-Diffuse Algorithm",
-  "Buddhabrot Fractal"
+  "Buddhabrot Fractal",
+  "Reaction-Diffuse Image"
 ]
 
 
@@ -40,7 +41,8 @@ const languages = [
   PYTHON,
   HTML+" "+CSS+" "+JS,
   JS,
-  HTML+" "+CSS+" "+JS
+  HTML+" "+CSS+" "+JS,
+  JS
 ]
 
 for (i in titles){
@@ -62,7 +64,8 @@ const imageurls = [
   "ascii",
   "piling",
   "reaction",
-  "buddha"
+  "buddha",
+  "rdimage"
 ]
 const links = [
   "PROJECTS/particle/index.html",
@@ -78,7 +81,8 @@ const links = [
   "https://replit.com/@marcus11333/ASCII?v=1", //
   "PROJECTS/piling/index.html",
   "PROJECTS/reaction/index.html",
-  "PROJECTS/buddha/index.html"
+  "PROJECTS/buddha/index.html",
+  "PROJECTS/rdimage/index.html"
 ]
 
 for (i in titles){
