@@ -65,20 +65,20 @@ const imageurls = [
   "buddha"
 ]
 const links = [
-  "PROJECTS/stuff/particlelife/index.html",
-  "PROJECTS/stuff/mandelbrot/index.html",
-  "PROJECTS/stuff/fractalflame/index.html",
-  "PROJECTS/stuff/ducksfractal/index.html",
-  "PROJECTS/stuff/desmos_multiplayer/index.php",
+  "PROJECTS/particle/index.html",
+  "PROJECTS/mandelbrot/index.html",
+  "PROJECTS/flame/index.html",
+  "PROJECTS/duck/index.html",
+  "PROJECTS/desmos/index.php",
   "https://replit.com/@marcus11333/albumreview?v=1", //
   "https://replit.com/@marcus11333/Wordle?v=1", //
   "https://replit.com/@marcus11333/pythonparticle?v=1", //
-  "PROJECTS/stuff/slime/index.html",
-  "PROJECTS/stuff/metaballs/index.html",
+  "PROJECTS/slime/index.html",
+  "PROJECTS/ball/index.html",
   "https://replit.com/@marcus11333/ASCII?v=1", //
-  "PROJECTS/stuff/ducks2/index.html",
-  "PROJECTS/stuff/reaction_diffusion/index.html",
-  "PROJECTS/stuff/buddha/index.html"
+  "PROJECTS/piling/index.html",
+  "PROJECTS/reaction/index.html",
+  "PROJECTS/buddha/index.html"
 ]
 
 for (i in titles){
