@@ -12,6 +12,7 @@
 - [x] Ducks Fractal Piling
 - [x] Reaction-Diffuse Algorithm
 - [x] Buddhabrot Fractal
+- [x] reaction diffuse image
 - [ ] Eulerian Fluid Simulation
 - [ ] Lagrangian Fluid Simulation
 - [ ] Perlin Noise Flow Field
