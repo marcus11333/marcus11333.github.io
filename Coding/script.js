@@ -5,7 +5,7 @@ const titles = [
   "Mandelbrot Fractal",
   "Fractal Flame",
   "Ducks Fractal",
-  "Desmos Multiplayer",
+  "Desmos Multiplayer (not currently working)",
   "Album Review Creator",
   "n-Length Wordle",
   "Particle Life but in Python",
