@@ -8,3 +8,5 @@
 - [ ] make the ducks fractal with sliders iphone compatible
 - [ ] add all static coding projects to the github
 - [ ] add description to reaction diffuse algorithm and link to carlsims
+- [ ] add :hover effect to SKILLS
+- [ ] improve the Nasa page
