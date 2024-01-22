@@ -1,0 +1,64 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+body {
+  display: flex;
+  margin: 0;
+  background-color: rgb(43, 43, 51);
+}
+.column {
+  flex: 50%;
+  height: 100vh;
+}
+
+.ld {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.row {
+  flex: 50%;
+  margin: 5%;
+  text-align: center;
+  border: solid 0.2vh rgb(170, 178, 209);
+  cursor: pointer;
+}
+
+h1 {
+  font-family: "Montserrat";
+  color: rgb(170, 178, 209);
+}
+
+.rd {
+  display: flex;
+  flex-direction: column;
+}
+
+.rightbox {
+  margin: 5%;
+  border: solid 0.2vh rgb(170, 178, 209);
+  flex: 100%;
+  margin-left: 0;
+  padding: 2.5%;
+}
+
+
+
+.row:hover h1 {
+  color: rgb(43, 43, 51);
+  transition: 0.5s;
+}
+
+.row:hover {
+  color: rgb(43, 43, 51);
+  background-color: rgb(170, 178, 209);
+  transition: 0.5s;
+}
+
+p {
+  font-family: "Montserrat";
+  color: rgb(170, 178, 209);
+  font-size: 1.4em;
+}

@@ -1,0 +1,135 @@
+html {
+  background: radial-gradient(#222, black);
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  flex-direction: column;
+}
+.brochure {
+  -webkit-animation: crunch 2s 0.5s cubic-bezier(.15,0,.6,1) forwards;
+          animation: crunch 2s 0.5s cubic-bezier(.15,0,.6,1) forwards;
+}
+@-webkit-keyframes crunch {
+  100% {
+    transform: scaleX(1);
+  }
+}
+@keyframes crunch {
+  100% {
+    transform: scaleX(1);
+  }
+}
+
+.card {
+  display: flex;
+  width: 66vw;
+  height: 25.5vw;
+}
+
+.fold {
+  flex: 1;
+  background: url(brochure.png);
+  background-size: cover;
+  -webkit-animation: 2s 0.5s cubic-bezier(.15,0,.6,1) forwards;
+          animation: 2s 0.5s cubic-bezier(.15,0,.6,1) forwards;
+}
+.fold:nth-child(1) {
+  background-position: 0%;
+}
+.fold:nth-child(2) {
+  background-position: 20%;
+}
+.fold:nth-child(3) {
+  background-position: 40%;
+}
+.fold:nth-child(4) {
+  background-position: 60%;
+}
+.fold:nth-child(5) {
+  background-position: 80%;
+}
+.fold:nth-child(6) {
+  background-position: 100%;
+}
+.fold:first-child {
+  border-radius: 2vw 0 0 2vw;
+}
+.fold:last-child {
+  border-radius: 0 2vw 2vw 0;
+}
+.fold:nth-child(odd) {
+  -webkit-animation-name: odd-fold;
+          animation-name: odd-fold;
+}
+@-webkit-keyframes odd-fold {
+  100% {
+    transform: skewY(0deg);
+    filter: brightness(1);
+  }
+}
+@keyframes odd-fold {
+  100% {
+    transform: skewY(0deg);
+    filter: brightness(1);
+  }
+}
+.fold:nth-child(even) {
+  -webkit-animation-name: even-fold;
+          animation-name: even-fold;
+}
+@-webkit-keyframes even-fold {
+  100% {
+    transform: skewY(0);
+    filter: brightness(1);
+  }
+}
+@keyframes even-fold {
+  100% {
+    transform: skewY(0);
+    filter: brightness(1);
+  }
+}
+
+
+.fold:nth-child(even) {
+  transform: skewY(-15deg);
+  filter: brightness(0.75);
+}
+.fold:nth-child(odd) {
+  transform: skewY(15deg);
+  filter: brightness(1.25);
+}
+.brochure {
+  transform: scaleX(0.6);
+}
+
+
+
+
+
+.stuff {
+  border: solid 1px white;
+  margin-top: 40px;
+  padding: 10px;
+  cursor: pointer;
+}
+.stuff p {
+  color: white;
+  font-family: "Montserrat";
+}
+
+
+.stuff:hover p {
+  color: rgb(43, 43, 51);
+  transition: 0.5s;
+}
+
+.stuff:hover {
+  color: rgb(43, 43, 51);
+  background-color: white;
+  transition: 0.5s;
+}

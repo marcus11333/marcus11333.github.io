@@ -152,18 +152,28 @@ body {
 }
 .sd {
   flex: 1;
-  /*background-color: #e0e0e0;*/
   text-align: center;
-  padding-top: 2vh;
   border: solid 0.2vh var(--blue);
-  font-size: 5vh; 
+  font-size: 5vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
 }
+.sd p{
+  margin: 0;
+}
+
+
 
 .topdiv {
   margin-bottom: 1vw;
   cursor: pointer;
 }
-
+.middiv {
+  margin-bottom: 1vw;
+  margin-top: 1vw;
+  cursor: pointer;
+}
 .botdiv {
   margin-top: 1vw;
   cursor: pointer;
@@ -200,9 +210,7 @@ body {
 .sd:hover {
   color: var(--black);
   background-color: var(--blue);
-  top: -10px;
   transition: 0.5s;
-  padding: 5vh;
 }
 
 .sd:hover i {

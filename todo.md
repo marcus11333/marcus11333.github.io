@@ -3,7 +3,7 @@
 - [x] add some color to main page
 - [ ] redo desmos page css
 - [x] add some basic css animations
-- [ ] add seperate mobile display
+- [x] add seperate mobile display (not needed for now)
 - [ ] add description to buddhabrot
 - [ ] make the ducks fractal with sliders iphone compatible
 - [ ] add all static coding projects to the github
