@@ -8,5 +8,7 @@
 - [ ] make the ducks fractal with sliders iphone compatible
 - [ ] add all static coding projects to the github
 - [ ] add description to reaction diffuse algorithm and link to carlsims
-- [ ] add :hover effect to SKILLS
+- [x] add :hover effect to SKILLS
 - [ ] improve the Nasa page
+- [ ] fix background image on main page for mobile, make it cover everything but still not overflow over bottom.
+- [ ] add gradient over image to make it fade at bottom
