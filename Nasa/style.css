@@ -2,25 +2,24 @@ html {
   height: 100%;
   width: 100%;
 }
+
 body {
   display: flex;
+  flex-direction: column;
   margin: 0;
   background-color: rgb(43, 43, 51);
 }
-.column {
-  flex: 50%;
-  height: 100vh;
-}
 
-.ld {
+.nav {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: space-evenly;
+  gap: 2vw;
+  margin: 2vw;
 }
 
-.row {
+.nav div {
   flex: 50%;
-  margin: 5%;
   text-align: center;
   border: solid 0.2vh rgb(170, 178, 209);
   cursor: pointer;
@@ -29,29 +28,22 @@ body {
 h1 {
   font-family: "Montserrat";
   color: rgb(170, 178, 209);
+  font-size: 4vmin;
 }
 
-.rd {
-  display: flex;
-  flex-direction: column;
-}
-
-.rightbox {
-  margin: 5%;
+.textbox {
+  margin: 2vw;
   border: solid 0.2vh rgb(170, 178, 209);
-  flex: 100%;
-  margin-left: 0;
-  padding: 2.5%;
+  padding: 0 2vw 0 2vw;
+  margin-top: 0;
 }
 
-
-
-.row:hover h1 {
+.nav div:hover h1 {
   color: rgb(43, 43, 51);
   transition: 0.5s;
 }
 
-.row:hover {
+.nav div:hover {
   color: rgb(43, 43, 51);
   background-color: rgb(170, 178, 209);
   transition: 0.5s;
@@ -60,13 +52,12 @@ h1 {
 p {
   font-family: "Montserrat";
   color: rgb(170, 178, 209);
-  font-size: 1.4em;
+  font-size: 3vmin;
 }
 
-.hunch22 {
-  margin-bottom: 2.5%;
-}
-
-.hunch23 {
-  margin-top: 2.5%;
+.videos {
+  margin: 2vw;
+  border: solid 0.2vh rgb(170, 178, 209);
+  padding: 0 2vw 2vw 2vw;
+  margin-top: 0;
 }
