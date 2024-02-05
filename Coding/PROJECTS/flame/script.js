@@ -73,19 +73,20 @@ function ex (x,y){
 }
 //
 //number of functions to choose from
-const j = 20
+const j = 7
 //canvas resolution
-const res = 500
+const res = 600
 //list of all possible functions
 //
+
+
+
 const FUNCTIONS = [linear,sinusoidal,spherical,swirl,horseshoe,polar,spiral,hyperbolic,diamond,julia,noise,handkerchief,disk,eyefish,ex]
 //list of selected functions
 FUNCS = Array.from({length: j}, () => FUNCTIONS[Math.floor(Math.random() * FUNCTIONS.length)] );
+
+
 //
-//
-//
-//
-// 
 //
 //
 //canvas + miscellaneous variables
@@ -100,28 +101,25 @@ canvas.height = res.toString();
 ctx.fillStyle = "black";
 ctx.fillRect(0, 0, res, res);
 //
-//fuuuuuuuuuck i really thought i had this fixed until i saw this godamn line of code. time for more troubleshooting :)))
-ctx.globalAlpha = .1
-//
 //draw pixel to canvas
 function draw2canvas(xPos, yPos, color) {
   ctx.fillStyle = color;
   ctx.fillRect(xPos, yPos, 1, 1);
 }
 //numbers
-const a_j = Array.from({length: j}, () => Math.random() );
-const b_j = Array.from({length: j}, () => Math.random() );
-const c_j = Array.from({length: j}, () => Math.random() );
-const d_j = Array.from({length: j}, () => Math.random() );
-const e_j = Array.from({length: j}, () => Math.random() );
-const f_j = Array.from({length: j}, () => Math.random() );
+const aj = Array.from({length: j}, () => Math.random() );
+const bj = Array.from({length: j}, () => Math.random() );
+const cj = Array.from({length: j}, () => Math.random() -.5 );
+const dj = Array.from({length: j}, () => Math.random() );
+const ej = Array.from({length: j}, () => Math.random() );
+const fj = Array.from({length: j}, () => Math.random() -.5 );
 //
 //fractal flame function
 function F(x,y){
-  //index for function
+  //index of function in FUNCTIONS list
   const rand = Math.floor(j *Math.random()) 
-  const X = a_j[rand] * x + b_j[rand] * y + c_j[rand]
-  const Y = d_j[rand] * x + e_j[rand] * y + f_j[rand]
+  const X = aj[rand] * x + bj[rand] * y + cj[rand]
+  const Y = dj[rand] * x + ej[rand] * y + fj[rand]
   const P = FUNCS[rand](X,Y)
   return [P[0],P[1],rand]
 }
@@ -163,14 +161,16 @@ function update(){
         const X0 = Math.floor(res2 * Px + res2)
         const Y0 = Math.floor(res2 * Py + res2)
 
-
-        RED[X0][Y0] = RED[X0][Y0]/2 + Pred/2
-        GREEN[X0][Y0] = GREEN[X0][Y0]/2 + Pgreen/2
-        BLUE[X0][Y0] = BLUE[X0][Y0]/2 + Pblue/2
         histogram[X0][Y0]++
+        RED[X0][Y0] = (RED[X0][Y0] + Pred)/2
+        GREEN[X0][Y0] = (GREEN[X0][Y0] + Pgreen)/2
+        BLUE[X0][Y0] = (BLUE[X0][Y0] + Pblue)/2
+
 
         //
-        if (histogram[X0][Y0] > MAX) MAX++
+        if (histogram[X0][Y0] > MAX){
+          MAX = histogram[X0][Y0]
+        }
 
         let co = Math.log(histogram[X0][Y0]) / Math.log(MAX) * 255
         red = co * RED[X0][Y0]
