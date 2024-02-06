@@ -8,7 +8,7 @@ const zoom_x = -1.768778833
 const zoom_y = -0.001738996
 
 //definitions
-const res = 250;
+const res = 300;
 
 let scale = 1;
 let angle = 0;
@@ -39,24 +39,26 @@ function Q(t,d) {
 }
 
 
-//main
-function rotate(x,y){
-  const theta = Math.atan2(y,x)
-  const dist = Math.sqrt(x*x + y*y)
-  return {
-    x: Math.cos(theta + angle) * dist,
-    y: Math.sin(theta + angle) * dist
+//prebake pixel distances and angles
+const distances = Array(res).fill().map(() => Array(res).fill(0));
+const angles = Array(res).fill().map(() => Array(res).fill(0));
+
+for (let x1 = 0; x1 < res; x1++){
+  for (let y1 = 0; y1 < res; y1++){
+    let x = x1 * v1  - 2;
+    let y = y1 * v1 - 2;
+    distances[x1][y1] = Math.sqrt(x*x + y*y)
+    angles[x1][y1] = Math.atan2(y,x)
   }
 }
 
 function update(){
   for (let x1 = 0; x1 < res; x1++){
     for (let y1 = 0; y1 < res; y1++){
-      const x00 = x1 * v1  - 2;
-      const y00 = y1 * v1 - 2;
-      const rot = rotate(x00,y00);
-      const x0 = rot.x / scale + zoom_x;
-      const y0 = rot.y / scale + zoom_y;
+      const theta = angles[x1][y1]
+      const dist = distances[x1][y1]
+      const x0 = Math.cos(theta + angle) * dist / scale + zoom_x;
+      const y0 = Math.sin(theta + angle) * dist / scale + zoom_y;
       let x = 0;
       let y = 0;
       let iter = 0;
