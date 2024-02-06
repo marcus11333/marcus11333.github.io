@@ -23,10 +23,11 @@ body {
   text-align: center;
   border: solid 0.2vh rgb(170, 178, 209);
   cursor: pointer;
+  padding: 0 2vw 0 2vw;
 }
 
-h1 {
-  font-family: "Montserrat";
+.nav h1 {
+  font-family: "nasalization";
   color: rgb(170, 178, 209);
   font-size: 4vmin;
 }
@@ -55,9 +56,13 @@ p {
   font-size: 3vmin;
 }
 
-.videos {
-  margin: 2vw;
-  border: solid 0.2vh rgb(170, 178, 209);
-  padding: 0 2vw 2vw 2vw;
-  margin-top: 0;
+.title {
+  text-align: center;
+}
+
+.title h1 {
+  font-size: 5vw;
+  font-family: "nasalization";
+  color: rgb(170, 178, 209);
+  margin: 0;
 }

@@ -106,10 +106,6 @@ body {
   transform: scaleX(0.6);
 }
 
-
-
-
-
 .stuff {
   border: solid 1px white;
   margin-top: 40px;
@@ -147,4 +143,39 @@ h1 {
   font-style: normal;
   color: white;
   font-size: 6vmin; 
+}
+
+.dropdown button {
+  background-color: black;
+  border-bottom: solid 1px white;
+  padding: 10px;
+  width: 100%;
+  cursor: pointer;
+  border-radius: 1vw;
+  color: white;
+  font-family: "nasalization";
+  font-size: 6vmin;
+}
+
+.dropdown {
+  width: 80vw;
+  /*border: solid 1px white;*/
+  border-radius: 1vw;
+  margin-top: 4vw;
+}
+
+.dropdown-content p {
+  color: white;
+  font-family: "Montserrat";
+}
+
+.dropdown-content {
+  display: none;
+}
+
+.dropdown-content {
+  padding: 10px;
+  color: white;
+  font-family: "Monserrat";
+  font-size: 4vmin
 }
