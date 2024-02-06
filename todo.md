@@ -1,14 +1,6 @@
 # To Do
-- [x] maybe redo main page css & html
-- [x] add some color to main page
 - [ ] redo desmos page css
-- [x] add some basic css animations
-- [x] add seperate mobile display (not needed for now)
 - [ ] add description to buddhabrot
 - [ ] make the ducks fractal with sliders iphone compatible
-- [ ] add all static coding projects to the github
 - [ ] add description to reaction diffuse algorithm and link to carlsims
-- [x] add :hover effect to SKILLS
 - [ ] improve the Nasa page
-- [ ] fix background image on main page for mobile, make it cover everything but still not overflow over bottom.
-- [ ] add gradient over image to make it fade at bottom
