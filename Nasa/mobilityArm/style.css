@@ -192,9 +192,9 @@ h1 {
 
 .bg {
   position: fixed;
-  width: 100vw;
-  height: 100vh;
+  height: 100%;
+  min-width: 100%;
   z-index: -1;
   top: 0;
-  opacity: 75%;
+  opacity: 70%;
 }
