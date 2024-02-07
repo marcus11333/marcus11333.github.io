@@ -1,10 +1,12 @@
 body {
-  background: radial-gradient(#111, black);
+  background-image: url(https://cff2.earth.com/uploads/2019/04/09230035/iss059e008350_orig.jpg);
   text-align: center;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  background-size: 100vw 100vh;
+  background-attachment: fixed;
 }
 .brochure {
   -webkit-animation: crunch 2s 0.5s cubic-bezier(.15,0,.6,1) forwards;
@@ -113,6 +115,7 @@ body {
   cursor: pointer;
   border-radius: 1vw;
   margin-bottom: 3vw;
+  background-color: black;
 }
 .stuff p {
   color: white;
@@ -185,4 +188,14 @@ h1 {
   background-color: white;
   color: black;
   transition: 0.5s;
+}
+
+.bg {
+  position: fixed;
+  background-color: black;
+  width: 100vw;
+  height: 100vh;
+  z-index: -1;
+  top: 0;
+  opacity: 25%;
 }
