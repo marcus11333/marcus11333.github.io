@@ -226,3 +226,13 @@ h1 {
   border-radius: 1vw;
   margin-top: 0.5vw;
 }
+
+.testing p {
+  font-size: 2vmin;
+}
+
+.testing img {
+  width: 50vw;
+  border-radius: 1vw;
+  margin-top: 0.5vw;
+}
