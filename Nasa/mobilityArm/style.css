@@ -229,10 +229,19 @@ h1 {
 
 .testing p {
   font-size: 2vmin;
+  margin-top: -1vw;
 }
 
 .testing img {
   width: 50vw;
   border-radius: 1vw;
   margin-top: 0.5vw;
+  margin-bottom: 1vw;
+}
+
+.testing iframe {
+  width: 50vw;
+  border-radius: 1vw;
+  margin-top: 0.5vw;
+  margin-bottom: 1vw;
 }
