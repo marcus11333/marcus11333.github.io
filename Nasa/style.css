@@ -24,7 +24,8 @@ body {
   border-radius: 1vw;
   cursor: pointer;
   padding: 1vw 2vw 1vw 2vw;
-  background: #0b3d91
+  background: #0b3d91;
+  box-shadow: 0 1vw #061F4A;
 }
 
 .nav h1 {
@@ -38,7 +39,7 @@ body {
   margin: 2vw;
   border-radius: 1vw;
   padding: 0 2vw 0 2vw;
-  margin-top: 0;
+  margin-top: 1vw;
   background: #dd361c;
 }
 
@@ -46,6 +47,7 @@ body {
   color: #0b3d91;
   background-color: #dd361c;
   transition: 0.5s;
+  box-shadow: 0 1vw #99231b;
 }
 
 p {
@@ -55,7 +57,9 @@ p {
 }
 
 .title {
-  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  padding: 1vw 2vw 1vw 2vw
 }
 
 .title h1 {
@@ -63,6 +67,7 @@ p {
   font-family: "nasalization";
   color: white;
   margin: 0;
+  margin-top: -1vw;
 }
 
 .nav img {
@@ -70,4 +75,9 @@ p {
   margin: 2vw;
   border-radius: 1vw;
   margin-bottom: 0;
+}
+
+.title img {
+  height: 6vw;
+  margin-top: 1vw;
 }
