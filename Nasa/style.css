@@ -7,7 +7,7 @@ body {
   display: flex;
   flex-direction: column;
   margin: 0;
-  background-color: rgb(43, 43, 51);
+  background-color: black;
 }
 
 .nav {
@@ -21,38 +21,36 @@ body {
 .nav div {
   flex: 50%;
   text-align: center;
-  border: solid 0.2vh rgb(170, 178, 209);
+  border-radius: 1vw;
   cursor: pointer;
-  padding: 0 2vw 0 2vw;
+  padding: 1vw 2vw 1vw 2vw;
+  background: #0b3d91
 }
 
 .nav h1 {
   font-family: "nasalization";
-  color: rgb(170, 178, 209);
+  color: white;
   font-size: 4vmin;
+  margin: 0;
 }
 
 .textbox {
   margin: 2vw;
-  border: solid 0.2vh rgb(170, 178, 209);
+  border-radius: 1vw;
   padding: 0 2vw 0 2vw;
   margin-top: 0;
-}
-
-.nav div:hover h1 {
-  color: rgb(43, 43, 51);
-  transition: 0.5s;
+  background: #dd361c;
 }
 
 .nav div:hover {
-  color: rgb(43, 43, 51);
-  background-color: rgb(170, 178, 209);
+  color: #0b3d91;
+  background-color: #dd361c;
   transition: 0.5s;
 }
 
 p {
   font-family: "Montserrat";
-  color: rgb(170, 178, 209);
+  color: white;
   font-size: 3vmin;
 }
 
@@ -63,6 +61,13 @@ p {
 .title h1 {
   font-size: 5vw;
   font-family: "nasalization";
-  color: rgb(170, 178, 209);
+  color: white;
   margin: 0;
+}
+
+.nav img {
+  width: 60%;
+  margin: 2vw;
+  border-radius: 1vw;
+  margin-bottom: 0;
 }
