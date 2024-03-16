@@ -26,6 +26,7 @@
 - [ ] Latex iMessage App
 - [ ] Circle Packing Image
 - [ ] Poincare Disk Tesselation
+- [ ] event coordinator app
 
 
 
