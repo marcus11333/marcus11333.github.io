@@ -27,7 +27,7 @@ html, body {
 }
 .topnav {
   width: auto;
-  margin: auto 40px auto 40px;
+  margin: auto 40px;
   background-color: #191919;
   padding: 20px;
   margin-top: 20px;
@@ -44,4 +44,16 @@ html, body {
 }
 .topnav i {
   margin-right: 10px;
+}
+
+.botnav {
+  margin: auto 40px;
+  background-color: #191919;
+  padding: 0 20px;
+  border-radius: 20px;
+  border: 1px solid #404040;
+  color: #9d9d9d;
+  font-family: "Varela", monospace;
+  font-size: 15px;
+  font-style:normal;
 }
