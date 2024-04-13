@@ -24,7 +24,8 @@ const canvas = document.getElementById("canv");
 const ctx = canvas.getContext("2d");
 canvas.width = res.toString();
 canvas.height = res.toString();
-
+var imageData = ctx.getImageData(0, 0, res, res);
+var data = imageData.data;
 
 
 //functions
@@ -83,11 +84,17 @@ function update(){
         const mod =  x*x + y*y
         const mu = iter + 3 - Math.log(.5 * Math.log(mod) ) / ln2;
         const v = mu / 10
-        const pixCol = "rgb("+Q(v,0)+","+Q(v,.3333)+","+Q(v,.6666)+")"
-        draw2canvas(x1,y1,pixCol);
+        const index = (y1 * res + x1) * 4;
+        data[index] = Q(v,0.0)
+        data[index+1] = Q(v,0.3333)
+        data[index+2] = Q(v,0.6666)
+        data[index+3] = 255
       } else {
-        const pixCol = "black";
-        draw2canvas(x1,y1,pixCol);
+        const index = (y1 * res + x1) * 4;
+        data[index] = 0
+        data[index+1] = 0
+        data[index+2] = 0
+        data[index+3] = 255
       }
 
 
@@ -95,6 +102,7 @@ function update(){
   }
   scale *= 1.1;
   angle += .02;
+  ctx.putImageData(imageData, 0, 0);
   requestAnimationFrame(update);
 }
 
