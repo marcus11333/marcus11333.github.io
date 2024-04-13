@@ -1,3 +1,6 @@
+
+
+
 // Constants
 const s = {
   f: .055,
@@ -39,8 +42,8 @@ function setup(){
   let canv = createCanvas(reso,reso)
   canvas = createGraphics(reso,reso);
   canvas.pixelDensity(1);
-  canv.style('width', '50vmin');
-  canv.style('height', '50vmin');
+  canv.style('width', '80vmin');
+  canv.style('height', '80vmin');
   //frameRate(60)
   
 
@@ -61,26 +64,22 @@ function render() {
         newb[x][y+1]-
         newb[x-1][y]-
         newb[x-1][y-1]-
-        newb[x][y-1]
-      ) + newb[x][y]
-      //br = br/2 + newb[x][y]/2
-      //br *= 2
+        newb[x][y-1]+
+        newb[x][y]
+      ) * 255
       
       
       
       
-      br *= 255
+      
+      
       const idx = (reso*y+x)*4
       //const idx = (2*reso*(2*y)+(2*x))*4
-      canvas.pixels[idx]   = br
-      canvas.pixels[idx+1] = 0
+      canvas.pixels[idx]   = 0
+      canvas.pixels[idx+1] = br
       canvas.pixels[idx+2] = br
       canvas.pixels[idx+3] = 255
       
-      //canvas.pixels[idx+4] = 255
-      //canvas.pixels[idx+5] = 0
-      //canvas.pixels[idx+6] = 0
-      //canvas.pixels[idx+7] = 255
     }
   }
   canvas.updatePixels();
