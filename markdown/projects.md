@@ -27,9 +27,7 @@
 - [ ] Circle Packing Image
 - [ ] Poincare Disk Tesselation
 - [ ] event coordinator app
+- [ ] game of life
+- [ ] mass facetime site
 
-
-
-=========================================
-website inspiration
-https://dvlpr.pro
+https://www.karlsims.com/papers/DynamicalSystemsECAL92.pdf
