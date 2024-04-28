@@ -29,5 +29,6 @@
 - [ ] event coordinator app
 - [ ] game of life
 - [ ] mass facetime site
+- [ ] sms ai stock analysis https://dreamincode.dev/projects
 
 https://www.karlsims.com/papers/DynamicalSystemsECAL92.pdf
