@@ -32,3 +32,6 @@
 - [ ] sms ai stock analysis https://dreamincode.dev/projects
 
 https://www.karlsims.com/papers/DynamicalSystemsECAL92.pdf
+
+https://github.com/Hvass-Labs/TensorFlow-Tutorials/blob/master/14_DeepDream.ipynb
+https://softologyblog.wordpress.com/2019/11/08/deepdream-part-1/
