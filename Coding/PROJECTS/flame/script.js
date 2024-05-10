@@ -76,20 +76,20 @@ function cylinder (x,y){
 }
 
 //number of functions to choose from
-const j = 7
+const j = 3
 
 //canvas resolution
-const res = 700;
+let res = 300;
 
 //list of all possible functions
-const FUNCTIONS = [linear,sinusoidal,spherical,swirl,horseshoe,polar,spiral,hyperbolic,diamond,julia,handkerchief,disk,eyefish,ex,cylinder] //noise
+const FUNCTIONS = [linear,sinusoidal,spherical,swirl,horseshoe,polar,spiral,hyperbolic,julia,handkerchief,disk,eyefish,ex,cylinder] //diamond,noise
 
 //list of selected functions
 FUNCS = Array.from({length: j}, () => FUNCTIONS[Math.floor(Math.random() * FUNCTIONS.length)] );
 
 //canvas + miscellaneous variables
 const tau = 2 * Math.PI
-const res2 = res/2
+let res2 = res/2
 const canvas = document.getElementById("canv");
 const ctx = canvas.getContext("2d");
 canvas.width = res.toString();
@@ -101,7 +101,15 @@ var data = imageData.data;
 //fill canvas black
 
 
-//numbers
+// weights
+let w_j = Array.from({length: j}, () => Math.random());
+
+const wsum = w_j.reduce((a, b) => a + b); // sum(w_j)
+w_j = w_j.map(a => a / wsum); // sum(w_j) == 1
+for (let i = 1; i < j; i++)
+  w_j[i] += w_j[i - 1];
+
+// coefficients
 const a_j = Array.from({length: j}, () => 2*Math.random()-1);
 const b_j = Array.from({length: j}, () => 2*Math.random()-1);
 const c_j = Array.from({length: j}, () => 2*Math.random()-1);
@@ -112,17 +120,19 @@ const f_j = Array.from({length: j}, () => 2*Math.random()-1);
 //fractal flame function
 function F(x,y){
   //index for function
-  const rand = Math.floor(j *Math.random()) 
+  const r = Math.random();
+  let rand = 0
+  while (r >= w_j[rand])
+    rand++
+
   const X = a_j[rand] * x + b_j[rand] * y + c_j[rand]
   const Y = d_j[rand] * x + e_j[rand] * y + f_j[rand]
-  const P = FUNCS[rand](X,Y)
-  return [P[0],P[1],rand]
+  return FUNCS[rand](X,Y)
 }
 
 //Inigo Quillez coloring
-function Q(t,d) {
-  const c = .5 + Math.cos(4 * tau * (t+d)) * .5;
-  return (255 * c) //<< 0
+function Q(t,a,b,c,d) {
+  return a + b * Math.cos(tau * (c * t+d))
 }
 
 data = data.fill(0)
@@ -131,35 +141,32 @@ for (i in data){
 }
 ctx.putImageData(imageData, 0, 0);
 histogram = Array(res*res).fill(0);
-max = 0
+max = 1
+logmax = 0
 
 function update(){
-  let Px = 2 * Math.random() - 1
-  let Py = 2 * Math.random() - 1
+  let Px =  2*Math.random() - 1
+  let Py =  2*Math.random() - 1
   for (let i = 0; i < 20; i++){
-    const arr = F(Px,Py)
-    Px = arr[0]
-    Py = arr[1]
+    [Px,Py] = F(Px,Py)
   }
-  for (let i = 20; i < 10000; i++){
-    const arr = F(Px,Py)
-    Px = arr[0]
-    Py = arr[1]
-    const temp = arr[2]/(j)
-    const index = ( ((res2 * Py + res2) << 0) * res + ((res2 * Px + res2) << 0)) * 4;
-    data[index] = (.9*data[index] + .1*Q(temp,0))
-    data[index+1] = (.9*data[index+1] + .1*Q(temp,.33333))
-    data[index+2] = (.9*data[index+2] + .1*Q(temp,.66666))
-    histogram[index/4] += 1
-    if (histogram[index/4] > max) max = histogram[index/4]
-    scl = (Math.log(histogram[index/4])/Math.log(max)) ** (1/2.2)
-    data[index] = (data[index]*scl) << 0
-    data[index+1] = (data[index+1]*scl) << 0
-    data[index+2] = (data[index+2]*scl) << 0
+  for (let i = 20; i < 100000; i++){
+    [Px,Py] = F(Px,Py)
+    const index = ( ((res2 * Py + res2) << 0) * res + ((res2 * Px + res2) << 0));
+    histogram[index] += 1
+    if (histogram[index] > max)
+      max = histogram[index]
+      logmax = Math.log(max)
+    scl = Math.log(histogram[index])/logmax
+
+    //data[4*index] =   Q(scl,0,0,0,0)           * 255 << 0
+    data[4*index+1] = Q(scl,0.5,0.5,0.5,0.5)   * 255 << 0
+    data[4*index+2] = Q(scl,0.5,0.5,0.33,0.66) * 255 << 0
+
+
   }
   //
-  ctx.putImageData(imageData, 0, 0);
-  requestAnimationFrame(update)
+
 }
 //
 //write function names on document
@@ -168,4 +175,31 @@ for (i of FUNCS ){
 }
 //
 //
-update()
+
+function run(){
+  //console.time("1");
+  update()
+  update()
+  update()
+  //console.timeEnd("1");
+  ctx.putImageData(imageData, 0, 0);
+  requestAnimationFrame(run)
+}
+run()
+
+function increaseres(){
+  res = 1000
+  res2 = res/2
+  canvas.width = res.toString();
+  canvas.height = res.toString();
+  imageData = ctx.getImageData(0, 0, res, res);
+  data = imageData.data;
+  data = data.fill(0)
+  for (i in data){
+    if (i % 4 == 3) data[i] = 255
+  }
+  ctx.putImageData(imageData, 0, 0);
+  histogram = Array(res*res).fill(0);
+  max = 1
+  logmax = 0
+}
