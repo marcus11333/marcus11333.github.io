@@ -12,7 +12,6 @@ const titles = [
   "Slime Mold Simulation",
   "Metaballs",
   "Image to ASCII art",
-  "Ducks Fractal Piling",
   "Reaction-Diffuse Algorithm",
   "Buddhabrot Fractal",
   "Reaction-Diffuse Image"
@@ -39,7 +38,6 @@ const languages = [
   HTML+" "+CSS+" "+JS,
   HTML+" "+CSS+" "+JS,
   PYTHON,
-  HTML+" "+CSS+" "+JS,
   JS,
   HTML+" "+CSS+" "+JS,
   JS
@@ -62,7 +60,6 @@ const imageurls = [
   "slime",
   "ball",
   "ascii",
-  "piling",
   "reaction",
   "buddha",
   "rdimage"
@@ -79,7 +76,6 @@ const links = [
   "PROJECTS/slime/index.html",
   "PROJECTS/ball/index.html",
   "https://replit.com/@marcus11333/ASCII?v=1", //
-  "PROJECTS/piling/index.html",
   "PROJECTS/reaction/index.html",
   "PROJECTS/buddha/index.html",
   "PROJECTS/rdimage/index.html"

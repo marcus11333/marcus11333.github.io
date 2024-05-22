@@ -1,34 +1,25 @@
-html {
-  height: 100%;
-  width: 100%;
+body {
+  display: flex;
 }
 canvas {
-  border: solid .3vmin black;
-  width: 30vw;
-  position: absolute;
-  left: 5vmin;
-  top: 5vmin;
+  border: solid 2px black;
+  width: 50vw;
+  height: 50vw;
 }
-.textbox {
-  border: solid .3vmin black;
-  border-radius: 10px;
-  width: calc(70vw - 19vmin);
-  position: absolute;
-  left: calc(10vmin + 30vw);
-  top: 5vmin;
-  padding: 2vmin;
+
+div {
+  width: 50%;
+  border: solid 2px black;
+  margin-left: 10px;
+  padding: 10px;
+  /*display: flex;
+  flex-direction: column;*/
 }
+
+input {
+  width: 70%;
+}
+
 p, h1 {
   font-family: "Noto Sans", serif;
-}
-button {
-  position: absolute;
-  padding: 0 2vmin 0 2vmin;
-  top: calc(10vmin + 30vw);
-  border: solid .3vmin black;
-  border-radius: 10px;
-  left: 5vmin;
-  color: black;
-  font-size: 1.3vw;
-  width: 30vw;
 }
