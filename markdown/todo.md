@@ -5,7 +5,6 @@
 - [ ] add description to reaction diffuse algorithm and link to carlsims
 - [ ] finish in progress projects
 - [ ] redesign main page again
-- [ ] combine the ducks piling with the optimized unfinished version and remove ducks zoom
 - [ ] optimize all canvas animations (buddha, metaballs, particle life) https://hacks.mozilla.org/2011/12/faster-canvas-pixel-manipulation-with-typed-arrays/
 - [ ] add explainers to flame
 - [ ] fix particle life UI for mobile
