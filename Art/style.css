@@ -11,9 +11,19 @@ body {
 .topnav {
   margin: 2vw 2vw 0 2vw;
   font-family: 'Montserrat', serif;
-  font-weight: 700;
-  font-size: 5vh;
   text-align: center;
+
+}
+.topnav h2 {
+  font-weight: 700;
+  font-size: 5vw;
+  margin: 0;
+}
+
+.topnav p {
+  font-weight: 400;
+  font-size: 2.5vw;
+  margin: 0;
 }
 
 .bigdiv {
