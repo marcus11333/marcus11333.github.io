@@ -24,8 +24,16 @@ body {
 
 .innerdiv{
   flex: 1;
-  border: 2px solid black;
+  border: solid 1px black;
   margin: 2vw;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  gap: 1% 0;
+  padding-top: 2%
+}
+.innerdiv img {
+  width: 30%;
 }
 
 .leftdiv {
