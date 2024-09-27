@@ -24,7 +24,6 @@ body {
 
 .innerdiv{
   flex: 1;
-  border: solid 1px black;
   margin: 2vw;
   display: flex;
   flex-wrap: wrap;
