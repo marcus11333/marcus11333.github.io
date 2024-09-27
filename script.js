@@ -9,3 +9,7 @@ function openDesmos() {
 function openNasa() {
   location.href= 'Nasa/index.html'
 }
+
+function openArt() {
+  location.href= 'Art/index.html'
+}

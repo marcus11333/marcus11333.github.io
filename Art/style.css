@@ -1,0 +1,37 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+body {
+  margin: 0px;
+  height: 100vh;
+  display: flex;
+  flex-direction:column;
+}
+.topnav {
+  margin: 2vw 2vw 0 2vw;
+  font-family: 'Montserrat', serif;
+  font-weight: 700;
+  font-size: 5vh;
+  text-align: center;
+}
+
+.bigdiv {
+  flex: 1;
+  display: flex;
+  height: calc(90vh - 4vw);
+}
+
+.innerdiv{
+  flex: 1;
+  border: 2px solid black;
+  margin: 2vw;
+}
+
+.leftdiv {
+  margin-right: 1vw;
+}
+
+.rightdiv {
+  margin-left: 1vw;
+}
