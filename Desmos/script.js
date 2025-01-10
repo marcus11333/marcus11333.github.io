@@ -52,7 +52,8 @@ graphs =[
   'wyr9tizeca', // Fractal flame
   'gjf2nuztfz', // Circle packing
   'md0dtsyhkx', // Softbody of any shape
-  'ydzapwdvaf' // Softbody car
+  'ydzapwdvaf', // Softbody car
+  'jxhdywug2i' // Gear Mobius
   ]
 
 async function grabTitle(hash) {
