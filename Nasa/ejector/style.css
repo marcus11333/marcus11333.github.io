@@ -1,0 +1,247 @@
+body {
+  background: black;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-size: 100vw 100vh;
+  background-attachment: fixed;
+}
+.brochure {
+  -webkit-animation: crunch 2s 0.5s cubic-bezier(.15,0,.6,1) forwards;
+          animation: crunch 2s 0.5s cubic-bezier(.15,0,.6,1) forwards;
+  margin-top: 2vw;
+  margin-bottom: 2vw;
+}
+@-webkit-keyframes crunch {
+  100% {
+    transform: scaleX(1);
+  }
+}
+@keyframes crunch {
+  100% {
+    transform: scaleX(1);
+  }
+}
+
+.card {
+  display: flex;
+  width: 92.4vw;
+  height: 35.7vw;
+}
+
+.fold {
+  flex: 1;
+  background: url(brochure.png);
+  background-size: cover;
+  -webkit-animation: 2s 0.5s cubic-bezier(.15,0,.6,1) forwards;
+          animation: 2s 0.5s cubic-bezier(.15,0,.6,1) forwards;
+}
+.fold:nth-child(1) {
+  background-position: 0%;
+}
+.fold:nth-child(2) {
+  background-position: 20%;
+}
+.fold:nth-child(3) {
+  background-position: 40%;
+}
+.fold:nth-child(4) {
+  background-position: 60%;
+}
+.fold:nth-child(5) {
+  background-position: 80%;
+}
+.fold:nth-child(6) {
+  background-position: 100%;
+}
+.fold:first-child {
+  border-radius: 2vw 0 0 2vw;
+}
+.fold:last-child {
+  border-radius: 0 2vw 2vw 0;
+}
+.fold:nth-child(odd) {
+  -webkit-animation-name: odd-fold;
+          animation-name: odd-fold;
+}
+@-webkit-keyframes odd-fold {
+  100% {
+    transform: skewY(0deg);
+    filter: brightness(1);
+  }
+}
+@keyframes odd-fold {
+  100% {
+    transform: skewY(0deg);
+    filter: brightness(1);
+  }
+}
+.fold:nth-child(even) {
+  -webkit-animation-name: even-fold;
+          animation-name: even-fold;
+}
+@-webkit-keyframes even-fold {
+  100% {
+    transform: skewY(0);
+    filter: brightness(1);
+  }
+}
+@keyframes even-fold {
+  100% {
+    transform: skewY(0);
+    filter: brightness(1);
+  }
+}
+
+
+.fold:nth-child(even) {
+  transform: skewY(-15deg);
+  filter: brightness(0.75);
+}
+.fold:nth-child(odd) {
+  transform: skewY(15deg);
+  filter: brightness(1.25);
+}
+.brochure {
+  transform: scaleX(0.6);
+}
+
+.stuff {
+  border: solid 1px white;
+  margin-top: 40px;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 1vw;
+  margin-bottom: 3vw;
+  background-color: black;
+}
+.stuff p {
+  color: white;
+  font-family: "Montserrat";
+  font-weight: 600;
+}
+
+
+.stuff:hover p {
+  color: rgb(43, 43, 51);
+  transition: 0.5s;
+}
+
+.stuff:hover {
+  color: rgb(43, 43, 51);
+  background-color: white;
+  transition: 0.5s;
+}
+
+iframe {
+  margin-top: 4vw;
+  width: 75vw;
+  height: 45vw;
+}
+
+h1 {
+  font-family: "nasalization", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  color: white;
+  font-size: 6vmin; 
+}
+
+.dropdown button {
+  background-color: black;
+  border: solid 1px white;
+  padding: 10px;
+  width: 100%;
+  cursor: pointer;
+  border-radius: 1vw;
+  color: white;
+  font-family: "nasalization";
+  font-size: 6vmin;
+  transition: 0.5s;
+}
+
+.dropdown {
+  width: 80vw;
+  border: solid 1px white;
+  border-radius: 1vw;
+  margin-top: 4vw;
+  background-color: black;
+  border-radius: 1vw;
+}
+
+.dropdown-content p {
+  font-family: "Montserrat";
+}
+
+.dropdown-content {
+  display: none;
+  padding: 2vw;
+  color: white;
+  font-family: "Monserrat";
+  font-size: 4vmin;
+}
+
+.dropdown button:hover {
+  background-color: white;
+  color: black;
+  transition: 0.5s;
+}
+
+.bg {
+  position: fixed;
+  height: 100%;
+  min-width: 100%;
+  z-index: -1;
+  top: 0;
+  opacity: 60%;
+}
+
+.bio-name {
+  font-size: 8vmin;
+  color: white;
+  font-weight: 800;
+  margin: 0;
+  margin-bottom: -.5vw;
+  margin-top: 2vw;
+}
+
+.bio-email {
+  font-size: 3vmin;
+  color: lightgray;
+  font-weight: 500;
+  margin: 0;
+}
+
+.bio-text {
+  font-size: 2vmin;
+  color: lightgray;
+  margin: 0;
+  margin-top: 0.5vw
+}
+
+.dropdown-content img {
+  width: 20vw;
+  border-radius: 1vw;
+  margin-top: 0.5vw;
+}
+
+.testing p {
+  font-size: 2vmin;
+  margin-top: -1vw;
+}
+
+.testing img {
+  width: 50vw;
+  border-radius: 1vw;
+  margin-top: 0.5vw;
+  margin-bottom: 1vw;
+}
+
+.testing iframe {
+  width: 50vw;
+  border-radius: 1vw;
+  margin-top: 0.5vw;
+  margin-bottom: 1vw;
+}

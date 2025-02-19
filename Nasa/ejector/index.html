@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Nasa Hunch 2023-2024</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.typekit.net/qql6yzt.css">
+  <link rel="preload" href="brochure.png" as="image">
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+
+  <img src="https://cff2.earth.com/uploads/2019/04/09230035/iss059e008350_orig.jpg" class="bg"></img>
+
+  
+  <h1>Kwadropus Mobility Arm</h1>
+  <div class="brochure">
+    <div class="card">
+      <div class="fold"></div>
+      <div class="fold"></div>
+      <div class="fold"></div>
+      <div class="fold"></div>
+      <div class="fold"></div>
+      <div class="fold"></div>
+    </div>
+  </div>
+
+  <div class="dropdown">
+    <button onclick="dropdownOpen(this)" class="dropbtn">Videos</button>
+    <div class="dropdown-content">
+      <iframe src="https://www.youtube.com/embed/QGhXKeQ9f9M?si=iLDDrU6epeibWApJ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      <iframe src="https://www.youtube.com/embed/iWIsASrboEw?si=Sfnjuyi7s1MeYcRa" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      <iframe src="https://www.youtube.com/embed/jdMU38HM5vs?si=Sfnjuyi7s1MeYcRa" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      <iframe src="https://www.youtube.com/embed/Jc5ZKW-CBCU?si=Sfnjuyi7s1MeYcRa" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </div>
+  </div>
+  
+  <div class="dropdown">
+    <button onclick="dropdownOpen(this)" class="dropbtn">Testing</button>
+    <div class="dropdown-content testing">
+      <h1>Full System Test</h1>
+      <p>In this test we used the full arm system to pick up a 3D printed handle with the same dimensions as the handles on the ISS. Although the arm has some stability issues while supporting the weight of the hand and the handle, this will not be an issue in a real microgravity environment. Ideally the hand would be slightly longer so it could wrap all the way around the handle for a more secure grip, but we could not mold another one in the time that we had.</p>
+      <iframe src="https://www.youtube.com/embed/02BM_OaU1DA?si=xLhWI97nmSBVnyNZ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      
+      <h1>Pressure Sensor Test</h1>
+      <p>We incorporated a pressure sensor into the hand to detect when it had grabbed an object. Ideally we would have a pressure sensor for every LSOVA in the arm and hand to detect all contact but due to cost constraints that was not possible. In this test we measured the pressure in one third of the hand when it is around an ISS handrail and when it is not. The pressure in the LSOVA was 0.084 PSI higher when the hand was holding onto the handrail. By calculating the expected pressure in each segment of the arm and detecting when it raises unexpectedly, we can detect when the arm has grabbed onto something.</p>
+      <img src="test1.png"></img>
+      
+      <h1>Extension Test</h1>
+      <p>One of the design requirements for the arm is that it must expand and contact by 12in. Our prototype main arm can expand and contact by 8in and can reach just over 12in with the hand attached. This distance could be easily extended by making the main arm longer.</p>
+      <img src="test2.png"></img>
+      
+      <h1>Arm Strength Test</h1>
+      <p>In this test we used a force gauge to get a rough estimate of the strength of the arm.  We secured the force gauge to the base plate and attached a string to the end of the arm. We then pulled on the string with the arm until it failed. The maximum force that the arm could exert was 1.225 Newtons.</p>
+      <img src="test3.png"></img>
+      
+      <h1>Hand Strength Test</h1>
+      <p>In this test we used a force gauge to see how much force the hand could hold onto before it failed. We looped a string around the force sensor and in the hand. The maximum force that the hand could hold onto was 2.097 Newtons.</p>
+      <img src="test4.png"></img>
+      
+    </div>
+  </div>
+
+  <div class="dropdown">
+    <button onclick="dropdownOpen(this)" class="dropbtn">About Us</button>
+    <div class="dropdown-content">
+      <div>
+        <p class='bio-text'>We are a team of three juniors from Minnesota interested in engineering, computer science and mathematics. We participate in NASA hunch primarily as an after school club, but we have also had some time in our engineering class. Our advisor and teacher is Mitch Burfiend (GOAT). Below is a short bio for each member of our team.</p>
+      </div>
+      <div>
+        <p class='bio-name'>Marcus Silver</p>
+        <p class='bio-email'>Email: marcus11333@gmail.com</p>
+        <p class='bio-email'>Website: marcus.science</p>
+        <img src='marcus.png'></img>
+        <p class='bio-text'>I'm a high school student from Minnetonka with a love for coding and math. I enjoy learning new math concepts and using them in my code. I also enjoy combining my math and coding knowledge to make things in Desmos, a graphing calculator program that I like to use as a programming language. I wrote the Arduino code for our project, helped with the design, and created a website to show off our project.</p>
+      </div>
+      <div>
+        <p class='bio-name'>Nate Kaufman</p>
+        <p class='bio-email'>Email: slappendabassmon@gmail.com</p>
+        <img src='nate.png'></img>
+        <p class='bio-text'>I am a current junior at Minnetonka High School interested in graphic design, aerospace history, and engineering. I designed our poster board, brochure, and business card. Additionally I contributed heavily with our research and ideation phase and created the hand of the robot. In addition I helped my team work on their public speaking skills and presenting abilities.</p>
+      </div>
+      <div>
+        <p class='bio-name'>Nicholas Joseph</p>
+        <p class='bio-email'>Email: nickj333@icloud.com</p>
+        <img src='nick.png'></img>
+        <p class='bio-text'>I am a junior at Minnetonka High School interested in science and engineering. I am proficient at autodesk inventor, and I have a lot of experience tinkering on different projects and 3d printing. I modeled, 3D printed and assembled most of our project.</p>
+      </div>
+
+
+
+      
+    </div>
+  </div>
+
+  
+  <div class = "stuff" onclick="openFiles()">
+    <p>Google Drive Folder with Videos, Parts, and Sources</p>
+  </div>
+
+
+  <script src="script.js"></script>
+</body>
+
+</html>
