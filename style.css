@@ -51,7 +51,7 @@ body {
 }
 
 .leftdiv {
-  border-top: solid 0.2vh var(--col);
+  border-top: solid 0.4vh var(--col);
 }
 
 .leftdiv h2 {
@@ -108,7 +108,8 @@ body {
 .sd {
   flex: 1;
   text-align: center;
-  border: solid 0.2vh var(--col);
+  border: solid 0.4vh var(--col);
+  border-radius: 20px;
   font-size: 5vh;
   display: flex;
   flex-direction: column;
@@ -119,7 +120,7 @@ body {
 
 .sd i {
   color: var(--black);
-  -webkit-text-stroke: 0.2vh var(--col);
+  -webkit-text-stroke: 0.4vh var(--col);
   transition: 0.5s;
 }
 
@@ -145,7 +146,7 @@ body {
 
 .sd:hover i {
   color: var(--col);
-  -webkit-text-stroke: 0.2vh var(--black);
+  -webkit-text-stroke: 0.4vh var(--black);
   transition: 0.5s;
   transform: rotateY(180deg);
 }
@@ -189,7 +190,7 @@ body {
   border: 0;
   height: 0px;
   width: 46vw;
-  border-top: solid 0.2vh var(--col);
+  border-top: solid 0.4vh var(--col);
   margin: 2vh 0 2vh 0;
 }
 
@@ -198,7 +199,7 @@ body {
 }
 
 .skills {
-  border-top: solid 0.2vh var(--col);
+  border-top: solid 0.4vh var(--col);
   text-align: center;
   margin: 0;
   margin-top: 2vh;
