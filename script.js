@@ -14,4 +14,6 @@ function openArt() {
   location.href= 'Art/index.html'
 }
 
-// test2
+function openOther() {
+  location.href= 'Other/index.html'
+}
