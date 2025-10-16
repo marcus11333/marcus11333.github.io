@@ -20,9 +20,7 @@
 }
 
 body {
-  margin: 0px;
-  display: flex;
-  flex-direction:column;
+  margin: 0;
   background: var(--black);
 }
 .topnav {
@@ -30,8 +28,8 @@ body {
   font-weight: 500;
   font-size: 4vh;
   height: 5vh;
-  margin: 0 2vw 0 2vw;
-  padding: 1vh 0 1vh 0;
+  margin: 0 20px;
+  padding: 10px 0;
   color: var(--col);
   display: flex;
   justify-content: space-between;
@@ -106,26 +104,24 @@ body {
   gap: 2vw;
 }
 .sd {
-  flex: 1;
   text-align: center;
-  border: solid 0.4vh var(--col);
+  border: solid 3px var(--col);
   border-radius: 20px;
-  font-size: 5vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
+  font-size: 30px;
   transition: 0.5s;
   cursor: pointer;
+  padding: 20px;
 }
 
 .sd i {
   color: var(--black);
-  -webkit-text-stroke: 0.4vh var(--col);
+  -webkit-text-stroke: 3px var(--col);
   transition: 0.5s;
 }
 
 .sd p {
   margin: 0;
+  margin-bottom: 20px;
   color: var(--col);
   font-family: 'roboto slab', serif;
   font-weight: 300;
