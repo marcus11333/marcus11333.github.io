@@ -1,1 +1,73 @@
+body {
+    margin: 0;
+    overflow-x: hidden;
+    display: flex;
+}
 
+.left {
+    width: 40%;
+    background-color: white;
+}
+
+.middle {
+    width: 40%;
+    border-left: solid 2px black;
+    border-right: solid 2px black;
+}
+
+.right {
+    width: 20%;
+    background-color: white;
+}
+.nav {
+    width: 100%;
+    font-weight: 700;
+    font-size: 20px;
+    text-align: center;
+    padding: 10px;
+    margin: 0;
+    border-bottom: solid 2px black;
+    font-family: "Montserrat";
+}
+.left .grid {
+    padding: 2vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 3vw;
+    row-gap: 2vw;
+    margin-right: 1vw;
+}
+.left .grid img {
+    width: 100%;
+    border: solid 0.1vw black;
+    background-color: white;
+}
+.middle .grid {
+    padding: 2vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-top: 1.5vw;
+    column-gap: 2vw;
+    row-gap: 4vw;
+}
+.middle .grid img {
+    width: 80%;
+    box-shadow: 
+    white 0.4vw -0.2vw 0 -0.1vw, 
+    black 0.4vw -0.2vw, 
+    white 0.8vw -0.4vw 0 -0.1vw, 
+    black 0.8vw -0.4vw, 
+    white 1.2vw -0.6vw 0 -0.1vw, 
+    black 1.2vw -0.6vw, 
+    white 1.6vw -0.8vw 0 -0.1vw, 
+    black 1.6vw -0.8vw;
+}
+
+.left .grid div {
+    display: flex;
+    width: 100%;
+    border-radius: 50%;
+    box-shadow: 
+        #121212 1.4vw 0,
+        black 1.8vw 0;
+}
